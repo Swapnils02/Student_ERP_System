@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hall Ticket</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link rel="stylesheet" href="css/hallticket.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="hallticket-container">
+    <div class="hallticket-card" id="hallticketCard">
+      <header>
+        <h2>Springfield High School</h2>
+        <h3>Hall Ticket - Academic Year 2026</h3>
+      </header>
+      <section class="student-info">
+        <div><b>Full Name:</b> <span id="htName">John Doe</span></div>
+        <div><b>PRN:</b> <span id="htPrn">126A1A123</span></div>
+        <div><b>Course:</b> <span id="htCourse">11th Science</span></div>
+        <div><b>Class:</b> <span id="htClass">12</span></div>
+        <div><b>Exam Center:</b> <span id="htCenter">Springfield High School</span></div>
+        <div><b>Division:</b> <span id="htDivision">A</span></div>
+      </section>
+      <section class="exam-details">
+        <table>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Exam Date</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="htSubjects">
+            <tr>
+              <td>Mathematics</td>
+              <td>21-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>Biology</td>
+              <td>22-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>Physics</td>
+              <td>23-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>Chemistry</td>
+              <td>24-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>25-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+              <td>Computer Science</td>
+              <td>26-03-2026</td>
+              <td>10:00 AM - 12:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="hallticket-instructions">
+        <h3>Instructions:</h3>
+        <ul>
+          <li>Carry this hall ticket to the examination center without fail.</li>
+          <li>Entry without a valid hall ticket is strictly prohibited.</li>
+          <li>Reach the examination hall at least 30 minutes before the exam.</li>
+          <li>Mobile phones, smart watches, and electronic devices are not allowed.</li>
+          <li>Follow seating arrangements and invigilator instructions carefully.</li>
+          <li>Ensure your personal details on the hall ticket are correct.</li>
+          <li>After the exam, submit the hall ticket if requested by the invigilator.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="print-wrapper">
+      <button class="print-btn">Print Hall Ticket</button>
+    </div>
+    <script src="js/hallticket.js"></script>
+</body>
+</html>

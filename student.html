@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar" id="studentInitial"></div>
+        <h3 id="studentName"></h3>
+      </div>
+      <ul class="menu">
+        <li class="active"><a href="student.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="attendance.html"><i class="fas fa-clipboard-check"></i> Attendance</a></li>
+        <li><a href="fees.html"><i class="fas fa-wallet"></i> Fees</a></li>
+        <li><a href="exam.html"><i class="fas fa-pen"></i> Examination</a></li>
+        <li><a href="timetable.html"><i class="fas fa-calendar-alt"></i> TimeTable</a></li>
+        <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h2>Student Dashboard</h2>
+      </header>
+      <section class="cards">
+        <div class="card">
+          <i class="fas fa-book-open">
+          </i>
+          <h3>Course</h3>
+          <p id="courseCard"></p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Attendance</h3>
+          <p id="attendance"></p>
+        </div>
+        <div class="card">
+          <i class="fas fa-star"></i>
+          <h3>Percentage</h3>
+          <p id="percentage"></p>
+        </div>
+      </section>
+      <section class="student-details">
+        <h3>Student Information</h3>
+        <div class="info-grid">
+          <div class="info-item"><b>Full Name:</b> <span id="fullName"></span></div>
+          <div class="info-item"><b>Email:</b> <span id="email"></span></div>
+          <div class="info-item"><b>PRN:</b> <span id="prn"></span></div>
+          <div class="info-item"><b>Fees Paid:</b> <span id="feespaid"></span></div>
+          <div class="info-item"><b>Mother's Name:</b> <span id="motherName"></span></div>
+          <div class="info-item"><b>Division:</b> <span id="division"></span></div>
+          <div class="info-item"><b>Course:</b> <span id="course"></span></div>
+          <div class="info-item"><b>Class:</b> <span id="class"></span></div>
+          <div class="info-item"><b>Gender:</b> <span id="gender"></span></div>
+          <div class="info-item"><b>Phone No:</b> <span id="phone"></span></div>
+          <div class="info-item"><b>Date of Birth:</b> <span id="dob"></span></div>
+          <div class="info-item"><b>Address:</b> <span id="address"></span></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/attendance.js"></script> 
+  <script src="js/result.js"></script> 
+  <script src="js/student.js"></script> 
+</body>
+</html>

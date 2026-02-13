@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result</title>
+    <link rel="icon" type="image/png" href="images/erp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="result-card">
+        <div class="result-header">
+            <h1>Springfield High School</h1>
+            <p>Official Student Result - Academic Year 2026</p>
+        </div>
+        <div class="student-info">
+            <div><b>Full Name:</b>
+                <p id="resultFullName"></p>
+            </div>
+            <div><b>PRN:</b>
+                <p id="resultPRN"></p>
+            </div>
+            <div><b>Class:</b>
+                <p id="resultClassDiv"></p>
+            </div>
+            <div><b>Date of Birth:</b>
+                <p id="resultDOB"></p>
+            </div>
+            <div><b>Mother's Name:</b>
+                <p id="resultMotherName"></p>
+            </div>
+            <div><b>Course:</b>
+                <p id="resultCourse"></p>
+            </div>
+        </div>
+        <table class="marks-table">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Subject</th>
+                    <th>Max Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="totals">
+            <div><b>Total Marks: </b> <span id="resultTotal"></span></div>
+            <div><b>Percentage: </b> <span id="resultPercentage"></span></div>
+            <div><b>Result: </b> <span id="resultStatus"></span></div>
+        </div>
+    </div>
+    <div class="print-wrapper">
+        <button class="print-btn">Print Result</button>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>

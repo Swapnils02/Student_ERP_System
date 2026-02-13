@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Timetable</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link rel="stylesheet" href="css/timetable.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="dashboard">
+  <div class="sidebar">
+    <div class="profile">
+      <div class="avatar" id="studentInitial"></div>
+      <h3 id="studentName"></h3>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="student.html">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <i class="fas fa-user"></i> Profile
+        </a>
+      </li>
+      <li>
+        <a href="attendance.html">
+          <i class="fas fa-clipboard-check"></i> Attendance
+        </a>
+      </li>
+      <li>
+        <a href="fees.html">
+          <i class="fas fa-wallet"></i> Fees
+        </a>
+      </li>
+      <li>
+        <a href="exam.html">
+          <i class="fas fa-pen"></i> Examination
+        </a>
+      </li>
+      <li class="active">
+        <a href="timetable.html">
+          <i class="fas fa-calendar-alt"></i> TimeTable
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h2>TimeTable</h2>
+    <div class="timetable-container">
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody id="timetableBody">
+          <tr>
+            <td>9:00 - 10:00</td>
+            <td>Math</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Computer Science</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td>Computer Science</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Math</td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:00</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Math</td>
+            <td>Biology</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>12:00 - 1:00</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+          </tr>
+          <tr>
+            <td>1:00 - 2:00</td>
+            <td>Biology</td>
+            <td>English</td>
+            <td>Computer Science</td>
+            <td>Math</td>
+            <td>Physics</td>
+          </tr>
+          <tr>
+            <td>2:00 - 3:00</td>
+            <td>Chemistry</td>
+            <td>Biology</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>3:00 - 4:00</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Math</td>
+            <td>Biology</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/student.js"></script>
+  <script src="js/timetable.js"></script>
+</body>
+</html>

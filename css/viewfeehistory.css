@@ -1,0 +1,114 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.fee-history-container {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.fee-history-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.fee-history-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fee-history-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.fee-history-header p {
+  font-size: 16px;
+  color: #667eea;
+}
+
+.student-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.student-info div {
+  display: flex;
+  font-size: 14px;
+  background: #f9f9f9;
+  padding: 5px 12px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.student-info div b {
+  color: #667eea;
+  width: 120px;
+}
+
+.fee-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.fee-table th {
+  background: #667eea;
+  color: white;
+  font-weight: 600;
+}
+
+.fee-table tbody tr:nth-child(even) {
+  background: #f2f4f7;
+}
+
+.fee-table tbody td:nth-child(5) {
+  font-weight: 600;
+  color: #074907;
+}
+
+.fee-table tbody td:nth-child(5):contains('Pending') {
+  color: #ff4d4f;
+}
+
+.print-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.print-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(102, 126, 234, 0.45);
+}
+
+#noTransactionMsg {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+  color: red;
+  font-weight: 500;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examination Dashboard</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link rel="stylesheet" href="css/exam.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="dashboard">
+  <div class="sidebar">
+    <div class="profile">
+      <div class="avatar" id="studentInitial"></div>
+      <h3 id="studentName"></h3>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="student.html">
+          <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <i class="fas fa-user"></i> Profile
+        </a>
+      </li>
+      <li>
+        <a href="attendance.html">
+          <i class="fas fa-clipboard-check"></i> Attendance
+        </a>
+      </li>
+      <li>
+        <a href="fees.html">
+          <i class="fas fa-wallet"></i> Fees
+        </a>
+      </li>
+      <li class="active">
+        <a href="exam.html">
+          <i class="fas fa-pen"></i> Examination
+        </a>
+      </li>
+      <li>
+        <a href="timetable.html">
+          <i class="fas fa-calendar-alt"></i> TimeTable
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h2>Examination</h2>
+    <div class="exam-container">
+      <div class="exam-card">
+        <div class="exam-logo">
+          <i class="fas fa-poll"></i>
+        </div>
+        <h3>Result</h3>
+        <button class="exam-btn bottom-btn" onclick="openResult()">Download</button>
+      </div>
+      <div class="exam-card">
+        <div class="exam-logo">
+          <i class="fas fa-id-card"></i>
+        </div>
+        <h3>Hall Ticket</h3>
+        <button class="exam-btn bottom-btn" onclick="openHallTicket()">Download</button>
+      </div>
+      <div class="exam-card">
+        <div class="exam-logo">
+          <i class="fas fa-pen-fancy"></i>
+        </div>
+        <h3>Register for Exam</h3>
+        <button class="exam-btn bottom-btn" onclick="openExamRegistration()">Register</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.exam-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 30px;
+  row-gap: 60px;
+  margin-top: 60px;
+}
+
+.exam-card {
+  background: linear-gradient(180deg,#764ba2 0%,#667eea 65%,#667eea 100%);
+  border-radius: 18px;
+  padding: 50px 15px 35px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+  color: white;
+}
+
+.exam-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.exam-card::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: white;
+  border-radius: 100% 100% 0 0;
+  z-index: 0;
+}
+
+.exam-logo {
+  width: 70px;
+  height: 70px;
+  background: #667eea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.exam-card h3 {
+  margin: 10px 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.exam-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.exam-btn {
+  padding: 10px 26px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #ffffff, #f1f3ff);
+  color: #764ba2;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.exam-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #f1f3ff, #ffffff);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}

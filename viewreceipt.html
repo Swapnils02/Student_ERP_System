@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Receipt</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/viewreceipt.css">
+</head>
+<body>
+  <div class="receipt-container">
+    <div class="status-card" id="feesNotPaidCard" style="display: none;">
+      <h2>Fees Not Paid</h2>
+      <p>Your fee payment has not been completed yet.</p>
+      <p>Please complete the payment to view the receipt.</p>
+    </div>
+    <div class="receipt-card" id="receiptCard" style="display: none;">
+      <header class="receipt-header">
+        <h2>Fee Payment Receipt</h2>
+        <p>Transaction Details</p>
+      </header>
+      <div class="student-info">
+        <div><b>Student Name:</b>
+          <p id="studentName"></p>
+        </div>
+        <div><b>Student PRN:</b>
+          <p id="studentPrn"></p>
+        </div>
+        <div><b>Course:</b>
+          <p id="studentCourse"></p>
+        </div>
+        <div><b>Division:</b>
+          <p id="studentDivision"></p>
+        </div>
+        <div><b>Payment Date:</b>
+          <p id="paymentDate"></p>
+        </div>
+        <div><b>Receipt No:</b>
+          <p id="receiptNo"></p>
+        </div>
+      </div>
+      <div class="payment-details">
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tuition Fee</td>
+              <td id="tuitionFee"></td>
+            </tr>
+            <tr>
+              <td>Lab Fee</td>
+              <td id="labFee"></td>
+            </tr>
+            <tr>
+              <td>Library Fee</td>
+              <td id="libraryFee"></td>
+            </tr>
+            <tr>
+              <td><b>Total Paid</b></td>
+              <td id="totalPaid"><b></b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="print-btn" onclick="window.print()">Print Receipt</button>
+    </div>
+  </div>
+  <script src="js/profile.js"></script>
+  <script src="js/viewreceipt.js"></script>
+</body>
+</html>

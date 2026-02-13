@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee History</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/viewfeehistory.css">
+</head>
+<body>
+  <div class="fee-history-container">
+    <div class="fee-history-card">
+      <header class="fee-history-header">
+        <h2>Fee Payment History</h2>
+        <p>All your past fee transactions</p>
+      </header>
+      <div class="student-info">
+        <div><b>Student Name:</b>
+          <p id="studentName"></p>
+        </div>
+        <div><b>Student PRN:</b>
+          <p id="studentPrn"></p>
+        </div>
+        <div><b>Course:</b>
+          <p id="studentCourse"></p>
+        </div>
+        <div><b>Division:</b>
+          <p id="studentDivision"></p>
+        </div>
+      </div>
+      <div class="fee-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Receipt No</th>
+              <th>Date</th>
+              <th>Payment Mode</th>
+              <th>Amount (₹)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="feeHistoryBody">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="noTransactionMsg" style="display:none;">No Transactions Found</p>
+      </div>
+      <button class="print-btn" onclick="window.print()">Print History</button>
+    </div>
+  </div>
+  <script src="js/profile.js"></script>
+  <script src="js/viewfeehistory.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.main-content h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.timetable-container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.timetable thead th {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+}
+
+.timetable td {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.timetable td:first-child {
+  font-weight: 600;
+  color: #667eea;
+  background: #f6f7ff;
+}
+
+.timetable tbody tr:nth-child(even) td {
+  background: #fafbff;
+}
+
+.timetable tbody tr:hover td {
+  background: rgba(102, 126, 234, 0.12);
+  cursor: pointer;
+}
+
+.timetable td:contains("Break") {
+  font-weight: 600;
+}

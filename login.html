@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student ERP Login</title>
+  <link rel="icon" type="image/png" href="images/erp.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <i class="fas fa-user-graduate"></i>
+        <h2>Student ERP</h2>
+        <p>Login to your account</p>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" required>
+        <label>Password</label>
+      </div>
+      <div class="login-options">
+        <a href="forgotpassword.html" class="forgot">Forgot Password?</a>
+      </div>
+      <button class="login-btn" onclick="login()">Login</button>
+      <div id="toast" class="toast">
+        <i id="toast-icon" class="fas"></i>
+        <span id="toast-text"></span>
+      </div>
+      <div class="signup-link">
+        Don’t have an account?
+        <a href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

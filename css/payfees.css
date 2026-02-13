@@ -1,0 +1,110 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.payfees-container {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.payfees-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.payfees-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.payfees-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.payfees-header p {
+  font-size: 16px;
+  color: #667eea;
+}
+
+.payfees-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.payfees-form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.payfees-form input,
+.payfees-form select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.payfees-form input:focus,
+.payfees-form select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.2);
+  outline: none;
+}
+
+.pay-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(102, 126, 234, 0.45);
+}
+
+.toast {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  min-width: 280px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  color: #1cc88a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(120%);
+  transition: all 0.4s ease;
+  z-index: 9999;
+  border-left: 5px solid #1cc88a;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error {
+  background-color: #FF4C4C;
+}
